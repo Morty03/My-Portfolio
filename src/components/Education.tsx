@@ -2,20 +2,25 @@
 const Education = () => {
   const education = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      year: "2018",
-      gpa: "3.9/4.0",
-      honors: "Magna Cum Laude"
+      degree: "M Tech Integrated Software Engineering",
+      institution: "Vellore Institute of Technology, Vellore",
+      location: "Vellore, India",
+      period: "September 2021 - Present",
+      gpa: "Overall GPA: 8.95/10"
     },
     {
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "University of California, Berkeley",
-      location: "Berkeley, CA", 
-      year: "2016",
-      gpa: "3.8/4.0",
-      honors: "Summa Cum Laude"
+      degree: "Class 12 (CBSE)",
+      institution: "Sunbeam CBSE School, Katpadi",
+      location: "Katpadi, India",
+      period: "May 2021",
+      gpa: "Total Percentage: 79%"
+    },
+    {
+      degree: "Class 10 (SSC)",
+      institution: "RK Model School, Chittoor",
+      location: "Chittoor, India",
+      period: "April 2019",
+      gpa: "CGPA: 10.0/10"
     }
   ];
 
@@ -25,7 +30,7 @@ const Education = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mb-4">
-              Education
+              EDUCATION
             </h2>
             <div className="w-16 h-0.5 bg-amber-600 mx-auto"></div>
           </div>
@@ -48,9 +53,8 @@ const Education = () => {
                       </p>
                     </div>
                     <div className="text-right mt-2 md:mt-0">
-                      <div className="text-stone-800 font-medium">{edu.year}</div>
-                      <div className="text-stone-600 text-sm">GPA: {edu.gpa}</div>
-                      <div className="text-amber-600 text-sm italic">{edu.honors}</div>
+                      <div className="text-stone-800 font-medium">{edu.period}</div>
+                      <div className="text-amber-600 text-sm italic">{edu.gpa}</div>
                     </div>
                   </div>
                 </div>
