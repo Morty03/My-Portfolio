@@ -1,32 +1,21 @@
 
-import { Code2, Database, Globe, Key } from "lucide-react";
+import { Code2, Database, Globe, Key, Award, Users } from "lucide-react";
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      icon: Globe,
-      skills: ["React & TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],
-      description: "Crafting elegant user interfaces with modern frameworks"
-    },
-    {
-      title: "Backend Engineering", 
-      icon: Database,
-      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
-      description: "Building robust and scalable server architectures"
-    },
-    {
-      title: "Development Tools",
-      icon: Code2, 
-      skills: ["Git & GitHub", "Docker", "AWS", "CI/CD"],
-      description: "Streamlined workflows and professional deployment"
-    },
-    {
-      title: "Core Principles",
-      icon: Key,
-      skills: ["Clean Architecture", "Test-Driven Development", "Performance Optimization", "Security Best Practices"],
-      description: "Fundamental practices that ensure lasting quality"
-    }
+  const technicalSkills = {
+    "Programming Languages": ["TypeScript", "JavaScript", "Python", "Java", "C++", "Go"],
+    "Frontend Technologies": ["React", "Vue.js", "Angular", "Next.js", "Tailwind CSS", "SASS"],
+    "Backend Technologies": ["Node.js", "Express", "Django", "Spring Boot", "FastAPI", "GraphQL"],
+    "Databases": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "DynamoDB", "Elasticsearch"],
+    "Cloud & DevOps": ["AWS", "Google Cloud", "Azure", "Docker", "Kubernetes", "Terraform"],
+    "Tools & Methodologies": ["Git", "Jenkins", "Agile/Scrum", "TDD", "CI/CD", "Microservices"]
+  };
+
+  const softSkills = [
+    { name: "Leadership", icon: Users },
+    { name: "Problem Solving", icon: Key },
+    { name: "Communication", icon: Globe },
+    { name: "Project Management", icon: Award }
   ];
 
   return (
@@ -35,47 +24,46 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mb-4">
-              Expertise
+              Technical Expertise
             </h2>
-            <div className="w-16 h-0.5 bg-amber-600 mx-auto mb-8"></div>
-            <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
-              A curated collection of skills, refined through years of dedicated practice 
-              and continuous learning in the art of software development.
-            </p>
+            <div className="w-16 h-0.5 bg-amber-600 mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {skillCategories.map((category, index) => (
-              <div 
-                key={index}
-                className="group bg-white p-8 rounded-sm shadow-lg hover:shadow-xl transition-all duration-300 border border-stone-200 hover:border-amber-200"
-              >
-                <div className="flex items-start space-x-4 mb-6">
-                  <div className="p-3 bg-stone-100 rounded-sm group-hover:bg-amber-50 transition-colors duration-300">
-                    <category.icon className="w-6 h-6 text-stone-600 group-hover:text-amber-600 transition-colors duration-300" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-serif text-stone-800 mb-2">
-                      {category.title}
-                    </h3>
-                    <p className="text-stone-600 text-sm leading-relaxed">
-                      {category.description}
-                    </p>
+          {/* Technical Skills */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-serif text-stone-800 mb-8 text-center">Core Competencies</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {Object.entries(technicalSkills).map(([category, skills], index) => (
+                <div key={index} className="bg-white p-6 rounded-sm shadow-lg border border-stone-200">
+                  <h4 className="text-lg font-serif text-stone-800 mb-4 border-b border-stone-200 pb-2">
+                    {category}
+                  </h4>
+                  <div className="space-y-2">
+                    {skills.map((skill, skillIndex) => (
+                      <div key={skillIndex} className="flex items-center">
+                        <div className="w-2 h-2 bg-amber-600 rounded-full mr-3"></div>
+                        <span className="text-stone-600">{skill}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                
-                <div className="grid grid-cols-2 gap-3">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div 
-                      key={skillIndex}
-                      className="text-sm text-stone-700 py-2 px-3 bg-stone-50 rounded-sm hover:bg-amber-50 transition-colors duration-200"
-                    >
-                      {skill}
-                    </div>
-                  ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Soft Skills */}
+          <div>
+            <h3 className="text-2xl font-serif text-stone-800 mb-8 text-center">Professional Skills</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {softSkills.map((skill, index) => (
+                <div key={index} className="bg-white p-6 rounded-sm shadow-lg border border-stone-200 text-center hover:shadow-xl transition-shadow duration-300">
+                  <div className="flex justify-center mb-4">
+                    <skill.icon className="w-8 h-8 text-amber-600" />
+                  </div>
+                  <h4 className="text-lg font-serif text-stone-800">{skill.name}</h4>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
