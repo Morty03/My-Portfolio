@@ -67,7 +67,7 @@ const Contact = () => {
                       Location
                     </div>
                     <div className="text-lg">
-                      Chittoor, AP
+                      Andhra Pradesh, IN
                     </div>
                   </div>
                   
