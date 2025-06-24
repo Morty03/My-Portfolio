@@ -95,9 +95,14 @@ const Contact = () => {
                     LinkedIn
                   </a>
 
-                  <a href="#" className="hover:text-amber-200 transition-colors duration-300">
-                    GitHub
-                  </a>
+                 <a
+                 href="https://github.com/Morty03"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="hover:text-amber-200 transition-colors duration-300"
+                 >
+                  GitHub
+                </a>
                   <a
                   href="https://drive.google.com/file/d/1yiI4dIvPwNONa4dgDl-fFOVIOjj5t9Se/view?usp=sharing"
                   target="_blank"
