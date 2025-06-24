@@ -3,7 +3,7 @@ const Certifications = () => {
   const certifications = [
     {
       name: "Android App Development",
-      category: "Interactive Learning",
+      category: "Imarticus Learning",
       period: "June 2024 - July 2024"
     },
     {
