@@ -40,8 +40,8 @@ const Contact = () => {
             </h2>
             <div className="w-16 h-0.5 bg-amber-200 mx-auto mb-8"></div>
             <p className="text-lg text-stone-300 max-w-2xl mx-auto leading-relaxed">
-              I'm always interested in discussing new opportunities, 
-              innovative projects, and potential collaborations with discerning clients.
+              Looking for roles where I can ship real impact, learn fast, and grow with the team.
+              I'm always interested in discussing new opportunities.
             </p>
           </div>
           
@@ -58,7 +58,7 @@ const Contact = () => {
                       Email
                     </div>
                     <div className="text-lg">
-                      alexander.sterling@example.com
+                      skgoutham1344@gmail.com
                     </div>
                   </div>
                   
@@ -67,7 +67,7 @@ const Contact = () => {
                       Location
                     </div>
                     <div className="text-lg">
-                      New York, NY
+                      Chittoor, AP
                     </div>
                   </div>
                   
@@ -87,13 +87,23 @@ const Contact = () => {
                   Professional Networks
                 </h4>
                 <div className="flex space-x-6 text-stone-400">
-                  <a href="#" className="hover:text-amber-200 transition-colors duration-300">
+                  <a
+                  href="https://www.linkedin.com/in/k-goutham-344897207"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-200 transition-colors duration-300">
                     LinkedIn
                   </a>
+
                   <a href="#" className="hover:text-amber-200 transition-colors duration-300">
                     GitHub
                   </a>
-                  <a href="#" className="hover:text-amber-200 transition-colors duration-300">
+                  <a
+                  href="https://drive.google.com/file/d/1yiI4dIvPwNONa4dgDl-fFOVIOjj5t9Se/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-200 transition-colors duration-300"
+                  >
                     Resume
                   </a>
                 </div>
@@ -170,7 +180,7 @@ const Contact = () => {
       {/* Footer */}
       <div className="border-t border-stone-800 mt-16 pt-8">
         <div className="text-center text-stone-500 text-sm">
-          <p>© 2024 Alexander Sterling. Crafted with precision and care.</p>
+          <p>© 2025 Goutham K. From concept to launch — precision at every phase.</p>
         </div>
       </div>
     </section>

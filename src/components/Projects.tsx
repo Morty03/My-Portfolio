@@ -36,7 +36,8 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div key={index} className="border-l-2 border-amber-600 pl-8 relative">
                 <div className="absolute w-3 h-3 bg-amber-600 rounded-full -left-2 top-2"></div>
-                <div className="bg-white p-8 rounded-sm shadow-lg">
+                <div className="bg-white p-6 md:p-8 rounded-sm shadow-lg overflow-visible">
+
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                     <div>
                       <h3 className="text-2xl font-serif text-stone-800 mb-2">

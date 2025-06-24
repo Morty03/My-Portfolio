@@ -20,17 +20,16 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-light mb-6 tracking-wide">
-            <span className="font-serif">Alexander</span>
+            <span className="font-serif">Goutham</span>
             <br />
-            <span className="font-serif italic text-amber-200">Sterling</span>
           </h1>
           
           <div className="w-24 h-0.5 bg-amber-200 mx-auto mb-8"></div>
           
           <p className="text-xl md:text-2xl font-light tracking-wider text-stone-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Software Engineer & Digital Craftsman
+            Software Engineering Student
             <br />
-            <span className="text-lg text-stone-400 italic">Building elegant solutions with timeless precision</span>
+            <span className="text-lg text-stone-400 italic">I write code that works hard and looks good doing it</span>
           </p>
           
           <button 

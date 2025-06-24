@@ -6,7 +6,7 @@ const Education = () => {
       institution: "Vellore Institute of Technology, Vellore",
       location: "Vellore, India",
       period: "September 2021 - Present",
-      gpa: "Overall GPA: 8.95/10"
+      gpa: "Overall GPA: 5.58/10"
     },
     {
       degree: "Class 12 (CBSE)",

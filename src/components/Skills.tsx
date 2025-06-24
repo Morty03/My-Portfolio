@@ -4,8 +4,8 @@ import { Code2, Database, Globe, Languages } from "lucide-react";
 const Skills = () => {
   const skillCategories = {
     "Computer Languages:": ["Python", "Java", "C", "HTML", "CSS", "Kotlin", "Java Script"],
-    "Software & Frameworks:": ["GIT", "Android Studio", "Firebase", "Robotic Process Automation", "React-Native", "API"],
-    "Course Work:": ["Database Management", "Data Structures", "Full Stack Development (MERN stack)", "Digital Image Processing", "Natural Language processing"],
+    "Software & Frameworks:": ["GIT", "Android Studio", "Firebase", "Robotic Process Automation", "React-Native", "API","Tensorflow"],
+    "Course Work:": ["Software Engineering" ,"Data Structures","Database Management",  "Full Stack Development", "Internet Of Things", "Natural Language processing"," Machine Learning & AI" ],
     "Languages:": ["English", "Tamil", "Telugu", "Hindi", "Kannada"]
   };
 
