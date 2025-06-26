@@ -1,50 +1,51 @@
-
-import { ChevronDown } from "lucide-react";
+import Silk from "@/components/Silks";
+import BlurText from "@/components/BlurText";
 
 const Hero = () => {
   const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Extract the SVG data URL to avoid quote conflicts
-  const texturePattern = "data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
-
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 text-stone-100 relative overflow-hidden">
-      {/* Subtle texture overlay */}
-      <div 
-        className="absolute inset-0 opacity-50"
-        style={{ backgroundImage: `url('${texturePattern}')` }}
-      ></div>
-      
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-light mb-6 tracking-wide">
-            <span className="font-serif">Goutham</span>
-            <br />
-          </h1>
-          
-          <div className="w-24 h-0.5 bg-amber-200 mx-auto mb-8"></div>
-          
-          <p className="text-xl md:text-2xl font-light tracking-wider text-stone-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Software Engineering Student
-            <br />
-            <span className="text-lg text-stone-400 italic">I write code that works hard and looks good doing it</span>
-          </p>
-          
-          <button 
-            onClick={scrollToAbout}
-            className="group inline-flex items-center text-amber-200 hover:text-amber-100 transition-all duration-300 font-light tracking-widest"
-          >
-            <span className="mr-2 text-sm uppercase">Discover More</span>
-            <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
-          </button>
-        </div>
+    <section className="relative isolate h-screen overflow-hidden text-stone-100 flex items-center justify-center">
+      {/* 🌀 Silk Background */}
+      <div className="absolute inset-0 -z-10 h-full w-full">
+        <Silk
+          speed={5}
+          scale={1}
+          color="#7B74B1"
+          noiseIntensity={1.5}
+          rotation={0}
+        />
       </div>
-      
-      {/* Elegant scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="w-px h-16 bg-gradient-to-b from-transparent via-amber-200 to-transparent animate-pulse"></div>
+
+      {/* Content */}
+      <div className="text-center px-6 max-w-3xl">
+        <BlurText
+          text="Goutham"
+          className="text-6xl md:text-8xl font-light mb-6 tracking-wide font-serif"
+          animateBy="letters"
+          direction="top"
+          delay={50}
+          stepDuration={0.35}
+          easing={(t) => t}
+        />
+
+        <div className="w-24 h-0.5 bg-amber-200 mx-auto mb-8"></div>
+
+        <p className="text-xl md:text-2xl font-light text-stone-300 mb-12">
+          Software Engineering Student<br />
+          <span className="text-lg text-stone-400 italic">
+            I write code that works hard and looks good doing it.
+          </span>
+        </p>
+
+        <button
+          onClick={scrollToAbout}
+          className="group inline-flex items-center text-amber-200 hover:text-amber-100 transition-all duration-300 font-light tracking-widest"
+        >
+          <span className="mr-2 text-sm uppercase">Discover More</span>
+        </button>
       </div>
     </section>
   );
