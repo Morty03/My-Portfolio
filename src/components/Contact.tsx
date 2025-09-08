@@ -97,7 +97,7 @@ const Contact = () => {
                     GitHub
                   </a>
                   <a
-                    href="https://drive.google.com/file/d/1yiI4dIvPwNONa4dgDl-fFOVIOjj5t9Se/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1fAIs-t2sUPM_nP-UlFSzduhFWCgnO1Zx/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-amber-200 transition-colors duration-300"
