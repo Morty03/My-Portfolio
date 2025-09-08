@@ -5,7 +5,7 @@ const Skills = () => {
   const skillCategories = {
     "Computer Languages:": ["Python", "Java", "C", "HTML", "CSS", "Kotlin", "Java Script"],
     "Software & Frameworks:": ["GIT", "Android Studio", "Firebase", "Robotic Process Automation", "React-Native", "API","Tensorflow"],
-    "Course Work:": ["Software Engineering" ,"Data Structures","Database Management",  "Full Stack Development", "Internet Of Things", "Natural Language processing"," Machine Learning & AI" ],
+    "Course Work:": ["Software Engineering" ,"Data Structures","Database Management",  "Full Stack Development", "Internet Of Things", "Natural Language processing"," Machine Learning & AI","Cloud and DevOps" ],
     "Languages:": ["English", "Tamil", "Telugu", "Hindi", "Kannada"]
   };
 

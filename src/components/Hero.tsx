@@ -3,7 +3,10 @@ import BlurText from "@/components/BlurText";
 
 const Hero = () => {
   const scrollToAbout = () => {
-    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -22,7 +25,7 @@ const Hero = () => {
       {/* Content */}
       <div className="text-center px-6 max-w-3xl">
         <BlurText
-          text="Goutham"
+          text="I'm Goutham"
           className="text-6xl md:text-8xl font-light mb-6 tracking-wide font-serif"
           animateBy="letters"
           direction="top"
@@ -43,8 +46,18 @@ const Hero = () => {
         <button
           onClick={scrollToAbout}
           className="group inline-flex items-center text-amber-200 hover:text-amber-100 transition-all duration-300 font-light tracking-widest"
+          aria-label="Scroll to About section"
         >
           <span className="mr-2 text-sm uppercase">Discover More</span>
+          <svg
+            className="w-4 h-4 transform group-hover:translate-y-1 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
         </button>
       </div>
     </section>

@@ -2,10 +2,10 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Easy Food Recipe App",
-      category: "App Development",
-      period: "June 2024 - July 2024",
-      description: "Developed a Food Recipe App using Android Studio (Kotlin/Java) and Node.js to browse and search for recipes. Utilized RESTful API integrations to retrieve and present recipe data. Built backend with Express.js and MongoDB for recipe management and user authentication."
+      title: "Generative Satellite Vision for Simulating Future Urban Morphology",
+      category: "AI + Climate Tech",
+      period: "August 2025 - Ongoing",
+      description: "Developing a generative AI-driven framework using GANs and diffusion models to simulate urban morphology under climate stress.Integrated satellite imagery, GIS datasets, and climate projections into an interactive web dashboard for planners and policymakers."
     },
     {
       title: "Face-Based Security System",
