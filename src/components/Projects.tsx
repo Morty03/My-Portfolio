@@ -5,21 +5,27 @@ const Projects = () => {
       category: "AI + Cybersecurity",
       period: "Present",
       description:
-        "Developed a multi-agent AI cybersecurity system to detect anomalous network activity. Implemented risk scoring and explainable reasoning using LLMs with automated incident report generation. Designed an event-driven architecture enabling autonomous threat monitoring."
+        "Developed a multi-agent AI cybersecurity system to detect anomalous network activity. Implemented risk scoring and explainable reasoning using LLMs with automated incident report generation.",
+      github: "https://github.com/Morty03/agentic-ai-cybersecurity",
+      demo: ""
     },
     {
       title: "Generative Satellite Vision (GenUrban)",
       category: "AI + Geospatial Intelligence",
       period: "2025",
       description:
-        "Built a generative AI framework to simulate future urban growth using satellite imagery and climate datasets. Integrated Earth Observation data with generative models to predict urban morphology scenarios and developed an interactive dashboard for climate-resilient urban planning simulations."
+        "Built a generative AI framework to simulate future urban growth using satellite imagery and climate datasets. Integrated Earth Observation data with generative models to predict urban morphology scenarios.",
+      github: "https://github.com/Morty03/genurban-ai",
+      demo: ""
     },
     {
       title: "DevTools PWA Toolkit",
       category: "Web Engineering",
       period: "2025",
       description:
-        "Developed a Progressive Web App for inspecting service workers, browser storage systems, and offline capabilities. Designed modular developer tools with a modern UI to debug and analyze browser-based applications."
+        "Developed a Progressive Web App for inspecting service workers, browser storage systems, and offline capabilities with a modern developer interface.",
+      github: "https://github.com/Morty03/devtools-pwa",
+      demo: ""
     }
   ];
 
@@ -51,15 +57,39 @@ const Projects = () => {
                     </div>
 
                     <div className="text-right mt-2 md:mt-0">
-                      <div className="text-stone-800 font-medium">
-                        {project.period}
-                      </div>
+                      <div className="text-stone-800 font-medium">{project.period}</div>
                     </div>
                   </div>
 
-                  <p className="text-stone-600 leading-relaxed">
+                  <p className="text-stone-600 leading-relaxed mb-4">
                     {project.description}
                   </p>
+
+                  {/* Buttons */}
+                  <div className="flex gap-4">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 bg-stone-800 text-white text-sm rounded hover:bg-stone-700 transition"
+                      >
+                        GitHub Repo
+                      </a>
+                    )}
+
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 border border-stone-800 text-stone-800 text-sm rounded hover:bg-stone-100 transition"
+                      >
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
+
                 </div>
               </div>
             ))}
