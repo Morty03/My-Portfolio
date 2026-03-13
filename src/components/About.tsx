@@ -6,7 +6,6 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            {/* Name (Keep default serif font) */}
             <ScrollFloat
               animationDuration={1}
               ease="back.inOut(2)"

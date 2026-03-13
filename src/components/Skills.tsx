@@ -1,12 +1,34 @@
-
 import { Code2, Database, Globe, Languages } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = {
-    "Computer Languages:": ["Python", "Java", "C", "HTML", "CSS", "Kotlin", "Java Script"],
-    "Software & Frameworks:": ["GIT", "Android Studio", "Firebase", "Robotic Process Automation", "React-Native", "API","Tensorflow"],
-    "Course Work:": ["Software Engineering" ,"Data Structures","Database Management",  "Full Stack Development", "Internet Of Things", "Natural Language processing"," Machine Learning & AI","Cloud and DevOps" ],
-    "Languages:": ["English", "Tamil", "Telugu", "Hindi", "Kannada"]
+    "Technical Skills": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Machine Learning",
+      "Generative AI",
+      "Cybersecurity",
+      "Geospatial Analysis"
+    ],
+    "Tools & Frameworks": [
+      "PyTorch",
+      "TensorFlow",
+      "FastAPI",
+      "GeoPandas",
+      "Rasterio",
+      "Git",
+      "VS Code",
+      "Docker"
+    ],
+    "Languages": [
+      "English",
+      "Tamil",
+      "Telugu",
+      "Hindi",
+      "Kannada"
+    ]
   };
 
   return (
@@ -19,16 +41,20 @@ const Skills = () => {
             </h2>
             <div className="w-16 h-0.5 bg-amber-600 mx-auto"></div>
           </div>
-          
+
           <div className="space-y-8">
             {Object.entries(skillCategories).map(([category, skills], index) => (
-              <div key={index} className="bg-white p-6 rounded-sm shadow-lg border border-stone-200">
+              <div
+                key={index}
+                className="bg-white p-6 rounded-sm shadow-lg border border-stone-200"
+              >
                 <h3 className="text-lg font-serif text-stone-800 mb-4 border-b border-stone-200 pb-2">
                   {category}
                 </h3>
+
                 <div className="flex flex-wrap gap-3">
                   {skills.map((skill, skillIndex) => (
-                    <span 
+                    <span
                       key={skillIndex}
                       className="px-3 py-1 bg-stone-100 text-stone-700 rounded-sm text-sm"
                     >

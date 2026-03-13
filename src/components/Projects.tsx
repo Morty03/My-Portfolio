@@ -1,23 +1,25 @@
-
 const Projects = () => {
   const projects = [
     {
-      title: "Generative Satellite Vision for Simulating Future Urban Morphology",
-      category: "AI + Climate Tech",
-      period: "August 2025 - Ongoing",
-      description: "Developing a generative AI-driven framework using GANs and diffusion models to simulate urban morphology under climate stress.Integrated satellite imagery, GIS datasets, and climate projections into an interactive web dashboard for planners and policymakers."
+      title: "Agentic AI Explainable Cybersecurity System",
+      category: "AI + Cybersecurity",
+      period: "Present",
+      description:
+        "Developed a multi-agent AI cybersecurity system to detect anomalous network activity. Implemented risk scoring and explainable reasoning using LLMs with automated incident report generation. Designed an event-driven architecture enabling autonomous threat monitoring."
     },
     {
-      title: "Face-Based Security System",
-      category: "Digital Image Processing", 
-      period: "Jan 2025 - May 2025",
-      description: "Developed a Face-Based Security System (FBSS) utilizing advanced facial recognition for enhanced, contactless security and user convenience. Implemented a robust biometric framework using Haar Cascade/AdaBoost for real-time face detection and LBPH for recognition, with liveness detection to prevent spoofing."
+      title: "Generative Satellite Vision (GenUrban)",
+      category: "AI + Geospatial Intelligence",
+      period: "2025",
+      description:
+        "Built a generative AI framework to simulate future urban growth using satellite imagery and climate datasets. Integrated Earth Observation data with generative models to predict urban morphology scenarios and developed an interactive dashboard for climate-resilient urban planning simulations."
     },
     {
-      title: "SMART DUSTBIN",
-      category: "Internet Of Things",
-      period: "August 2024 - November 2024", 
-      description: "Developed an IoT Smart Dustbin for automated waste segregation, resident verification, and real-time fill-level monitoring with municipal alerts. Leveraged Arduino Uno, Python (with OpenCV), and moisture/ultrasonic sensors for waste classification, facial recognition, and fill-level monitoring, enhancing urban waste management."
+      title: "DevTools PWA Toolkit",
+      category: "Web Engineering",
+      period: "2025",
+      description:
+        "Developed a Progressive Web App for inspecting service workers, browser storage systems, and offline capabilities. Designed modular developer tools with a modern UI to debug and analyze browser-based applications."
     }
   ];
 
@@ -31,13 +33,13 @@ const Projects = () => {
             </h2>
             <div className="w-16 h-0.5 bg-amber-600 mx-auto"></div>
           </div>
-          
+
           <div className="space-y-12">
             {projects.map((project, index) => (
               <div key={index} className="border-l-2 border-amber-600 pl-8 relative">
                 <div className="absolute w-3 h-3 bg-amber-600 rounded-full -left-2 top-2"></div>
-                <div className="bg-white p-6 md:p-8 rounded-sm shadow-lg overflow-visible">
 
+                <div className="bg-white p-6 md:p-8 rounded-sm shadow-lg overflow-visible">
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                     <div>
                       <h3 className="text-2xl font-serif text-stone-800 mb-2">
@@ -47,11 +49,14 @@ const Projects = () => {
                         {project.category}
                       </p>
                     </div>
+
                     <div className="text-right mt-2 md:mt-0">
-                      <div className="text-stone-800 font-medium">{project.period}</div>
+                      <div className="text-stone-800 font-medium">
+                        {project.period}
+                      </div>
                     </div>
                   </div>
-                  
+
                   <p className="text-stone-600 leading-relaxed">
                     {project.description}
                   </p>
