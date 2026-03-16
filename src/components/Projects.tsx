@@ -6,7 +6,7 @@ const Projects = () => {
       period: "Present",
       description:
         "Developed a multi-agent AI cybersecurity system to detect anomalous network activity. Implemented risk scoring and explainable reasoning using LLMs with automated incident report generation.",
-      github: "https://github.com/Morty03/agentic-ai-cybersecurity",
+      github: "https://github.com/Morty03/Agentic-AI-Explainable-Cybersecurity-System",
       demo: ""
     },
     {
